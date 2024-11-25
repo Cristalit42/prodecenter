@@ -1,0 +1,135 @@
+.footer {
+  padding: 40px 0;
+  margin-top: 80px;
+  position: relative;
+
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: $white;
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 236px 412px 218px;
+    justify-content: space-between;
+
+    @media (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      align-content: center;
+    }
+  }
+
+  @media (max-width: 900px) {
+    padding-bottom: 120px;
+    padding-top: 20px;
+    margin-top: 50px;
+  }
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.footer__rights {
+  font-size: 14px;
+  color: #aeaeae;
+
+  a {
+    margin-top: 10px;
+    white-space: nowrap;
+  }
+
+
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: 136px 69px;
+  justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+.footer__nav-col {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    @include color-gradient($white);
+    font-size: 14px;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer__contacts-wrapper {}
+
+.footer__contacts {
+  border-radius: 10px;
+  padding: 15px 20px;
+  background: #20201f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+  button {
+    background: transparent;
+
+    span {
+      @include color-gradient($gold-light);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: lowercase;
+    }
+  }
+}
+
+.footer__phone {
+  @include color-gradient($white);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.footer__socials {
+  a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

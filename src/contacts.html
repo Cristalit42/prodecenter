@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prodecanter</title>
+  <link rel="stylesheet" href="./styles/style.scss">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <include src="./components/popup.html"></include>
+
+    <header>
+      <include src="./components/header.html"></include>
+    </header>
+
+    <main>
+
+      <section class="contacts-page container">
+        <h1 class="title">
+          контакты
+        </h1>
+        <div class="contacts__page-content">
+          <div class="contacts-page__item">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2670.8322428928504!2d37.4230194417494!3d55.74298358936597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54edbcc4fd8e3%3A0x7e77158bda2e85be!2z0KDRg9Cx0LvRkdCy0YHQutC-0LUg0YguLCA5OSDQutC-0YDQv9GD0YEgNSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyMTU1Mg!5e0!3m2!1sru!2skg!4v1732470921120!5m2!1sru!2skg"
+              width="630" height="445" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div>
+              <img src="images/svg/mark-icon.svg" width="40" height="40" alt="mark-icon">
+              Офис в Москве: Рублевское шоссе, д. 99 корп. 5
+            </div>
+          </div>
+          <div class="contacts-page__item">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d998.8787210334324!2d30.305044029971278!3d59.95275832562267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696313f7d258813%3A0x3b5ec9dd626e91c8!2z0JrRgNC-0L3QstC10YDQutGB0LrQuNC5INC_0YAuLCA2Nywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTk3MTk4!5e0!3m2!1sru!2skg!4v1732471282501!5m2!1sru!2skg"
+              width="630" height="445" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div>
+              <img src="images/svg/mark-icon.svg" width="40" height="40" alt="mark-icon">
+              Офис в Санкт-Петербурге: Кронверкский проспект 67/13
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <include src="./components/contacts.html"></include>
+    </main>
+
+    <include src="./components/footer.html"></include>
+
+  </div>
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>
